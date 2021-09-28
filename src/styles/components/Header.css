@@ -1,0 +1,21 @@
+header {
+    background: #6324C6;
+    height: 91px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 85px;
+}
+
+header h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header span{
+    color: #FFB800;
+}

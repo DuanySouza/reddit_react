@@ -1,0 +1,78 @@
+#tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: content;
+    margin: 25px 0;
+}
+
+#tabs button{
+    padding: 10px 65px;
+    background:#A7B0BE;
+    border: #A7B0BE;
+    border-radius: 8px;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+#tabs button .btnIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabs button .btnIcon h5{
+    margin-left: 3px;;
+}
+
+#tabs button:hover{
+    background: #6324C6;
+    transition: 0.4s;
+}
+
+#tabs button.active{
+    background: #6324C6;
+}
+
+.btnMore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: content;
+    margin-bottom: 30px;
+}
+
+.btnMore button {
+    width: 100%;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    background: #6324C6;
+    color:#fff;
+    padding: 10px 15px;
+    margin: 0 80px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnMore button:hover{
+    transition: 0.3s;
+    background-color: #6e42b3;
+}
+
+.btnMore button .btnIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnMore button .btnIcon h5{
+    margin-left: 6px;
+}
