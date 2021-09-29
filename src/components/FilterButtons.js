@@ -63,19 +63,19 @@ export default function FilterButtons(){
     return(
         <div>
             <section id="tabs">
-                <button title="Hot" target="_blank" onClick={ () => changeTab('hot')} className={active[0]}>
+                <button title="Hot" onClick={ () => changeTab('hot')} className={active[0]}>
                     <div className="btnIcon">   
                         <FaFireAlt />
                         <h5>Hot</h5>
                     </div>
                 </button>
-                <button title="News" target="_blank" onClick={ () => changeTab('new')} className={active[1]}>
+                <button title="News" onClick={ () => changeTab('new')} className={active[1]}>
                     <div className="btnIcon">
                         <TiStarburstOutline />
                         <h5>News</h5>
                     </div>
                 </button>
-                <button title="Rising" target="_blank" onClick={ () => changeTab('rising')} className={active[2]}>
+                <button title="Rising" onClick={ () => changeTab('rising')} className={active[2]}>
                     <div className="btnIcon">
                         <AiOutlineStock />
                         <h5>Rising</h5>

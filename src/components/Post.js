@@ -36,7 +36,7 @@ export default function Post(props) {
       
     return(
         <section id="posts">
-          <a href={"https://reddit.com" + props.post.permalink} alt={props.post.title} title={props.post.title}>
+          <a target="_blank" href={"https://reddit.com" + props.post.permalink} alt={props.post.title} title={props.post.title}>
             {
               props.post.thumbnail === 'self' || props.post.thumbnail === 'default' ? <img src={reactThumb} alt="Thumb Post"/> :  <img src={props.post.thumbnail } alt="Thumb Post"/>
             }
