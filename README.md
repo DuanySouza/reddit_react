@@ -5,7 +5,7 @@
 
 <div align="center">
     <h3>Este projeto pode ser acessado Online</h3>
-    <a href="https://project-react-reddit.herokuapp.com/">Acessar o Projeto</a>
+    <a target="_blank" href="https://project-react-reddit.herokuapp.com/">Acessar o Projeto</a>
 </div>
 
 ## 📇 Indice
