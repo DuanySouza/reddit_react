@@ -14,8 +14,6 @@
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Como baixar o projeto](#-como-baixar-o-projeto)
 
----
-
 ## 🔖&nbsp; Sobre
 
 O **Reddit React** é uma aplicação React que lê dados da api do Reddit, mais especificamente do subreddit **reactjs**. 
@@ -23,8 +21,6 @@ O **Reddit React** é uma aplicação React que lê dados da api do Reddit, mais
 Ele consiste em 3 botões para navegar entre três tipos de conteúdos que a pessoa desejar sendo eles Hot, New e Rising. 
 
 Esse projeto é um desafio oferecido pela empresa **[winnin](https://en.winnin.com/)**. 
-
----
 
 ## 🚀 Tecnologia utilizada
 
@@ -34,8 +30,6 @@ O projeto foi desenvolvido utilizando com a seguinte tecnologia e bibliotecas:
 - [ReactDOM](https://pt-br.reactjs.org/docs/react-dom.html)
 - [React Router](https://reactrouter.com/web/guides/quick-start)
 - [React Icons](https://react-icons.github.io/react-icons/)
-
----
 
 ## 🗂 Como baixar o projeto
 
