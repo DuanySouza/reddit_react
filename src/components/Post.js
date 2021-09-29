@@ -3,8 +3,20 @@ import React from 'react';
 import '../styles/components/Post.css';
 import reactThumb from '../assets/img/reactThumb.png';
 
-export default function Post(props) {    
+/**
+ * Component that creates the posts
+ * 
+ * @param {Object} props properties passed to the component with the API data 
+ * @returns {JSX.Element} post element that renders the posts using the data from the API 
+ */
+export default function Post(props) { 
 
+    /**
+     * Function that transforms the post date in past time from current date
+     * 
+     * @param {Date} date the post date
+     * @returns {String} the past time from the current date as a string 
+     */
     function timeSince(date) {
 
         var seconds = Math.floor((new Date() - date) / 1000);
@@ -36,7 +48,7 @@ export default function Post(props) {
       
     return(
         <section id="posts">
-          <a target="_blank" href={"https://reddit.com" + props.post.permalink} alt={props.post.title} title={props.post.title}>
+          <a target="_blank" rel="noreferrer" href={"https://reddit.com" + props.post.permalink} alt={props.post.title} title={props.post.title}>
             {
               props.post.thumbnail === 'self' || props.post.thumbnail === 'default' ? <img src={reactThumb} alt="Thumb Post"/> :  <img src={props.post.thumbnail } alt="Thumb Post"/>
             }

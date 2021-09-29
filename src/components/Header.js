@@ -1,8 +1,13 @@
-import React from 'react'; 
+import React from 'react';
 
 import '../styles/components/Header.css';
 import reactLogo from '../assets/img/reactLogo.png';
 
+/**
+ * Component responsible for rendering the header
+ * 
+ * @returns {JSX.Element} header element
+ */
 export default function Header(){
     return (
         <header>

@@ -8,6 +8,12 @@ import Post from './Post'
 
 import '../styles/components/FilterButtons.css';
 
+/**
+ * Component where the users choose the type of posts they want to see
+ * The types are: Hot, News e Rising
+ * 
+ * @returns {JSX.Element} element with the buttons of the application 
+ */
 export default function FilterButtons(){
 
     const [post, setPost] = useState([]);
@@ -15,6 +21,11 @@ export default function FilterButtons(){
     const [tab, setTab] = useState('hot')
     const [after, setAfter] = useState(''); 
 
+    /**
+     * Function that changes the tab that is active at the moment
+     * 
+     * @param {String} newTab tab to activate (by default the hot tab is the active one)
+     */
     async function changeTab(newTab){
 
         if( newTab === 'hot'){
@@ -33,6 +44,12 @@ export default function FilterButtons(){
         setPost(posts.children);
     }
 
+    /**
+     * Function that gets the API data from the reactjs subreddit 
+     * 
+     * @returns {Object} posts data from the API 
+     */
+
     async function getPosts(){
 
         const res = await fetch(`https://www.reddit.com/r/reactjs/${tab}.json?limit=10&after=${after}`)
@@ -49,6 +66,9 @@ export default function FilterButtons(){
         return posts.data; 
     }
 
+    /**
+     * Function that loads more posts without deleting the existing ones  
+     */
     async function seeMore(){
 
         const posts = await getPosts();
