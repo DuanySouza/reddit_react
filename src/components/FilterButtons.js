@@ -81,7 +81,7 @@ export default function FilterButtons(){
     },[]) // eslint-disable-line react-hooks/exhaustive-deps
 
     return(
-        <div>
+        <div id="search">
             <section id="tabs">
                 <button title="Hot" onClick={ () => changeTab('hot')} className={active[0]}>
                     <div className="btnIcon">   
@@ -103,7 +103,7 @@ export default function FilterButtons(){
                 </button>
             </section>
 
-            <section className="post">
+            <section id="posts">
                 {
                     ( post != null) ? post.map((post, index) => <Post key={index} post={post.data} />) : ''
                 }

@@ -47,7 +47,7 @@ export default function Post(props) {
 
       
     return(
-        <section id="posts">
+        <div className="post">
           <a target="_blank" rel="noreferrer" href={"https://reddit.com" + props.post.permalink} alt={props.post.title} title={props.post.title}>
             {
               props.post.thumbnail === 'self' || props.post.thumbnail === 'default' ? <img src={reactThumb} alt="Thumb Post"/> :  <img src={props.post.thumbnail } alt="Thumb Post"/>
@@ -58,6 +58,6 @@ export default function Post(props) {
               <h5>{props.post.domain}</h5>
             </div>
           </a>
-        </section>
+        </div>
     )
 }

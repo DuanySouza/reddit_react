@@ -1,3 +1,7 @@
+#search{
+    min-height: 100%;
+}
+
 #tabs {
     display: flex;
     flex-direction: row;
@@ -37,6 +41,10 @@
 
 #tabs button.active{
     background: #6324C6;
+}
+
+#posts{
+    min-height: 800px;
 }
 
 .btnMore {
